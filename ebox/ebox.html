@@ -7,13 +7,42 @@
       {
         position: relative;
         display: inline-block;
-        width: 300px;
-        height: 300px;
-        background-color: grey;
+        width: 200px;
+        height: 180px;
+        background-color: #dedede;
+        transition-property: all;
+        transition-duration: .4s;
       }
+
+      :host(:hover)
+      {
+        width: 400px;
+      }
+
+      #thumbnail
+      {
+        width: 190px;
+        height: 120px;
+        margin: auto;
+        margin-top: 5px;
+        background-color: #b5b5b5;
+        transition-property: all;
+        transition-duration: .2s;
+      }
+
+      #thumbnail:hover
+      {
+        background-color: #151515;
+        margin-top: 0;
+        width: 200px;
+        height: 180px;
+      }
+
     </style>
     
-    
+    <div id="thumbnail">
+
+    </div>
     
   </template>
 
@@ -31,7 +60,6 @@
 
         };
       }
-      
     }
 
     customElements.define(eBox.is,eBox);
