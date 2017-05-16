@@ -9,14 +9,11 @@
         display: inline-block;
         width: 200px;
         height: 180px;
-        background-color: #dedede;
+        /*background-color: #dedede;*/
+        font-family: roboto;
+        overflow: hidden;
         transition-property: all;
         transition-duration: .4s;
-      }
-
-      :host(:hover)
-      {
-        width: 400px;
       }
 
       #thumbnail
@@ -38,12 +35,27 @@
         height: 180px;
       }
 
+      #label
+      {
+        position: absolute;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 40px;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        padding-left: 10px;
+        word-wrap: break-word;
+      }
+
     </style>
     
     <div id="thumbnail">
 
     </div>
     
+    <p id="label">title</p>
+
   </template>
 
   <script>
