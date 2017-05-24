@@ -1,5 +1,17 @@
 <link rel="import" href="../polymer/polymer/polymer.html">
 
+<!--
+  ~~slots~~
+  title: front image title (1 line)
+  slide-info: popup description
+
+  ~~css~~
+  title-background: background colour of title
+
+  ~~attributes~~
+  img: background image of box, 280x180
+-->
+
 <dom-module id="e-box">
   <template>
     <style>
@@ -77,9 +89,7 @@
     <div id="title">
       <p><slot name="title"></slot></p>
 
-      <div id="label">
-        <slot name="slide-info"></slot>
-      </div>
+      <div id="label"><slot name="slide-info"></slot></div>
     </div>
 
 
