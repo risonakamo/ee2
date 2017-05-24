@@ -22,10 +22,13 @@
 
       #label
       {
-        background-color: red;
+        background-color: white;
         position: relative;
         width: 100%;    
         height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
       }
 
       #title
@@ -38,7 +41,8 @@
         cursor: default;
         user-select: none;
         transition-property: all;
-        transition-duration: .5s;
+        transition-duration: .7s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       }
 
       #title p
@@ -46,28 +50,29 @@
         box-sizing: border-box;
         padding-left: 10px;
         height: 40px;
+        line-height: 40px;
         background-color: rgba(0,0,0,0);
         transition-property: background-color;
-        transition-duration: 1.5s;
+        transition-duration: 1.1s;
       }
 
       #title p:hover
       {
-        background-color: red;
+        background-color: white;
       }
 
       #title:hover
       {
         transform: translateY(-180px);
-        transition-delay: 1s;
+        transition-delay: .6s;
       }
     </style>
     
     <div id="title">
-      <p>big title too big</p>
+      <p><slot name="title"></slot></p>
 
       <div id="label">
-        interesting content goes here
+        <slot name="slide-info"></slot>
       </div>
     </div>
 
