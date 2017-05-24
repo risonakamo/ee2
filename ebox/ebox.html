@@ -26,6 +26,13 @@
         overflow: hidden;
         border-radius: 5px;
         margin: 15px;
+        transition-property: transform;
+        transition-duration: .2s;
+      }
+
+      :host(:hover)
+      {
+        transform: translateY(-3px);
       }
 
       p

@@ -2,8 +2,13 @@
 
 body
 {
-    /*margin: 100px;*/
+    margin: 0;
     background-color: #1e1e1e;
+}
+
+p
+{
+    margin: 0;
 }
 
 a
@@ -12,7 +17,20 @@ a
     text-decoration: none;
 }
 
+.top-banner
+{
+    height: 500px;
+    width: 100%;
+    background-color: #efedf2;
+    background-image: url("./img/elephant_as_fuck.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 500px;
+    background-position: 70% 0;
+}
+
 .wrap
 {
     width: 1000px;
+    margin: auto;
 }
