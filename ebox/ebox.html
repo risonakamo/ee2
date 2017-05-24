@@ -6,7 +6,8 @@
   slide-info: popup description
 
   ~~css~~
-  title-background: background colour of title
+  title-background: background colour of title, change if text is hard to see
+  slide-box-background: background of slide up text
 
   ~~attributes~~
   img: background image of box, 280x180
@@ -56,7 +57,7 @@
 
       #label
       {
-        background-color: white;
+        background-color: var(--slide-box-background,white);
         position: relative;
         width: 100%;    
         height: 180px;
@@ -81,7 +82,7 @@
 
       #title p:hover
       {
-        background-color: white;
+        background-color: var(--slide-box-background,white);
       }
 
       #title:hover
