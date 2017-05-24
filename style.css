@@ -22,15 +22,63 @@ a
     height: 500px;
     width: 100%;
     background-color: #efedf2;
-    background-image: url("./img/elephant_as_fuck.png");
+    
+}
+
+.banner
+{
+    width: 1000px;
+    height: 500px;
+    background-image: url("./img/elephantbanner-en.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: auto 500px;
-    background-position: 70% 0;
+    background-position: center top;
+    margin: auto;
 }
 
 .wrap
 {
     width: 1000px;
     margin: auto;
+}
+
+e-box.lighter
+{
+    --title-background: rgba(255,255,255,.5);
+}
+
+p.tag
+{
+    display: inline-block;
+    padding: 4px;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+p.yellow
+{
+    color: #ffd344;
+    border-color: #ffd344;
+}
+
+p.red
+{
+    color: #dc0000;
+    border-color: #dc0000;
+}
+
+p.divider
+{
+    margin-top: 10px;
+    border-top-style: dotted;
+    border-width: 1px;    
+}
+
+.s-green
+{
+    color: #1bb76e;
 }
