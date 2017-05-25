@@ -90,6 +90,7 @@
         transform: translateY(-180px);
         transition-delay: .6s;
       }
+
     </style>
     
     <img src="[[img]]">
@@ -114,10 +115,12 @@
       static get properties()
       {
         return {
-          img: String
+          img: String,
+          sid: String
         };
       }
     }
+
 
     customElements.define(eBox.is,eBox);
   </script>

@@ -83,3 +83,27 @@ p.divider
 {
     color: #1bb76e;
 }
+
+@keyframes blink
+{
+    from
+    {
+        border-color: rgba(205,81,91,0);
+    }
+
+    to
+    {
+        border-color: rgba(205,81,91,1);
+    }
+}
+
+.marked
+{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(205,81,91,1);
+    animation-name: blink;
+    animation-duration: 100ms;
+    animation-direction: alternate;
+    animation-iteration-count: 5;
+}
