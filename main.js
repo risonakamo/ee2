@@ -20,6 +20,7 @@ function ejump()
     {
         if (eboxes[x].sid==link)
         {
+            eboxes[x].scrollIntoView();
             eboxes[x].classList.add("marked");
             return;
         }
