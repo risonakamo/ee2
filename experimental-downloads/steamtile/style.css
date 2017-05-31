@@ -1,0 +1,11 @@
+.search_capsule
+{
+    height: 215px !important;
+}
+
+.searchList a
+{
+    width: 460px !important;
+    display: inline-block !important;
+    height: 300px !important;
+}

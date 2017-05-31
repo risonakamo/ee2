@@ -1,0 +1,15 @@
+{
+    "manifest_version":2,
+    "name":"steamtile",
+    "version":"1",
+
+    "permissions":["tabs","http://store.steampowered.com/*"],
+
+    "content_scripts":
+    [{
+        "matches":["http://store.steampowered.com/search/*"],
+        "js":["jquery-3.1.0.min.js","steam_search.js"],
+        "css":["style.css"],
+        "run_at":"document_end"
+    }]
+}
